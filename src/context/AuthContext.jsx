@@ -27,7 +27,7 @@ export const AuthProvider = ({ children }) => {
       throw new Error('User already exists');
     }
 
-    const newUser = { email, password, name }; // WARNING: Storing passwords in plain text is a huge security risk!
+    const newUser = { email, password, name }; 
     users.push(newUser);
     localStorage.setItem('users', JSON.stringify(users));
 

@@ -20,8 +20,7 @@ const AccountPage = () => {
   const handleUpdate = (e) => {
     e.preventDefault();
     try {
-      // We only allow updating the name in this example
-      // Updating email or password would be more complex
+      // We only allow updating the name for simplicity
       updateUser({ name });
       setMessage('Profile updated successfully!');
       setIsEditing(false);
